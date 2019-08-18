@@ -1,0 +1,96 @@
+:root {
+  --main-color: none;
+  --transBack: background-color 2s;
+  --transColor: color 2s;
+}
+
+body {
+  background-color: var(--main-color);
+  transition: var(--transBack);
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  background-color: white;
+  border-radius: 17px;
+  position: relative;
+  width: 450px;
+  padding: 40px;
+}
+
+#text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: var(--main-color);
+  transition: var(--transColor);
+  opacity: 1;
+}
+
+#quote {
+  color: var(--main-color);
+  transition: var(--transColor);
+}
+
+#author {
+  text-align: right;
+  padding-top: 24px;
+  color: var(--main-color);
+  transition: var(--transColor);
+}
+
+.buttons {
+  background-color: var(--main-color);
+  transition: var(--transBack);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 24px;
+  margin-right: 8px;
+  padding: 0px;
+  padding-top: 10px;
+  font-size: 1.2em;
+  height: 30px;
+  width: 40px;
+}
+
+.buttons:hover {
+  opacity: 0.7;
+}
+
+.buttons:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+#new-quote {
+  background-color: var(--main-color);
+  transition: var(--transBack);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  margin-top: 24px;
+  height: 40px;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 8px 16px 8px 16px;
+}
+
+#new-quote:hover {
+  opacity: 0.7;
+}
+
+#new-quote:focus {
+  outline:0;
+}
+
+#new-quote:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
